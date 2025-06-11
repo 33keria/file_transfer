@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "file-transfer"
+version = "0.1.0"
+description = ""
+authors = ["kuixiang.liao <kuixiang.liao@fargowealth.com.hk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+uvicorn = "^0.23.2"
+python-multipart = "^0.0.6"
+aiofiles = "^23.2.1"
+requests = "^2.31.0"
+structlog = "^23.2.0"
+orjson = "^3.9.10"
+redis = "^5.0.1"
+
+[[tool.poetry.source]]
+name = "foo"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
